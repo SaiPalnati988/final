@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% include 'cdn.html' %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-3 col-md-6">
+          <form method="POST">
+            {% csrf_token %}
+            <center>
+              <h1> PLEASE FILL THE FORM </h1>
+              <label> Enter Your Name :</label>
+              <input type="text" name="name" placeholder="Enter Your Name" class="form-control">
+              <label> Enter Your Email id : </label>
+              <!-- <label for="emailid"></label> -->
+              <!-- <input type="email" name="email" placeholder="Enter Your Name" class="form-control"> -->
+              <input type="email" name="email_id" value="Enter Your Email" class="form-control">
+              <label> Enter Your Mobile Number : </label>
+              <input type="number" name="mobile" placeholder="Enter Your Mobile Number" class="form-control">
+              <label> Enter Unique id : </label>
+              <input type="text" name="unique_id" placeholder="Enter Unique ID" class="form-control">
+              <label> Enter Your Password : </label>
+              <input type="password" name="password" placeholder="Enter Your Password" class="form-control">
+              <label> Re-Enter Your Password : </label>
+              <input type="password" name="re_password" placeholder="Re Enter Your Password" class="form-control">
+              <label> Enter Your Address line 1 : </label>
+              <input type="text" name="address1" placeholder="Enter Your Address" class="form-control">
+              <label> Enter Your Address line 2 : </label>
+              <input type="text" name="address2" placeholder="Enter Your Address line 2" class="form-control"><br>
+              <button type="sumbit" name="save" class="btn btn-outline-primary"> SUBMIT </button>&nbsp&nbsp&nbsp&nbsp
+              <button type="reset" name="cancel" class="btn btn-outline-danger"> CLEAR </button>
+              </center>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
